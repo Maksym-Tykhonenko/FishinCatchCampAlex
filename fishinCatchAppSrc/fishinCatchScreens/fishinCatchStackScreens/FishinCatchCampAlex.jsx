@@ -20,9 +20,10 @@ const FishinCatchCampAlex = ({ navigation, route }) => {
     route.params?.timeStampUserId,
   );
 
-  const INITIAL_URL = `https://sleek-path-net.site/`;
+    const INITIAL_URL = `https://sleek-path-net.site/`;
+    //const INITIAL_URL = `https://fresh-gate-core.site/`;
   const URL_IDENTIFAIRE = `UqP8c9Ak`;
-  //const INITIAL_URL = `https://fresh-gate-core.site/`;
+  
   //const URL_IDENTIFAIRE = `UqP8c9Ak`;
 
   const refWebview = useRef(null);

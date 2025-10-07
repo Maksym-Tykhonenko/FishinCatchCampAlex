@@ -63,6 +63,7 @@ const App = () => {
   const [checkAsaData, setCheckAsaData] = useState(null);
 
   const INITIAL_URL = `https://sleek-path-net.site/`;
+  //const INITIAL_URL = `https://fresh-gate-core.site/`;
   const URL_IDENTIFAIRE = `UqP8c9Ak`;
 
   useEffect(() => {
