@@ -336,7 +336,7 @@ const App = () => {
       }
 
       let storedTimeStampUserId = await AsyncStorage.getItem('timeStampUserId');
-      console.log('storedTimeStampUserId', storedTimeStampUserId);
+      //console.log('storedTimeStampUserId', storedTimeStampUserId);
 
       // Виконуємо fetch тільки коли timeStampUserId є
       if (event.notification.launchURL) {
@@ -344,19 +344,19 @@ const App = () => {
         fetch(
           `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_browser&jthrhg=${storedTimeStampUserId}`,
         );
-        console.log('Івент push_open_browser OneSignal');
-        console.log(
-          `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_browser&jthrhg=${storedTimeStampUserId}`,
-        );
+        //console.log('Івент push_open_browser OneSignal');
+        //console.log(
+        //  `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_browser&jthrhg=${storedTimeStampUserId}`,
+        //);
       } else {
         setPushOpenWebview(true);
         fetch(
           `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_webview&jthrhg=${storedTimeStampUserId}`,
         );
-        console.log('Івент push_open_webview OneSignal');
-        console.log(
-          `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_webview&jthrhg=${storedTimeStampUserId}`,
-        );
+        //console.log('Івент push_open_webview OneSignal');
+        //console.log(
+        //  `${INITIAL_URL}${URL_IDENTIFAIRE}?utretg=push_open_webview&jthrhg=${storedTimeStampUserId}`,
+        //);
       }
 
       pushOpenWebViewOnce.current = true; // Блокування повторного виконання
@@ -570,7 +570,7 @@ const App = () => {
     const checkUrl = `${INITIAL_URL}${URL_IDENTIFAIRE}`;
     //console.log('checkUrl==========+>', checkUrl);
 
-    const targetData = new Date('2025-10-06T08:08:00'); //дата з якої поч працювати webView
+    const targetData = new Date('2025-10-13T08:08:00'); //дата з якої поч працювати webView
     const currentData = new Date(); //текущая дата
 
     if (!route) {
